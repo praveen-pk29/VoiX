@@ -295,6 +295,7 @@
 
 -(void)singleTapping:(UIGestureRecognizer *)recognizer
 {
+    [self Play_record];
     NSLog(@"actionHandleTapOnImageView");
 }
 -(void)start_record
