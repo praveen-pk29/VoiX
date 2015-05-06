@@ -252,11 +252,8 @@
     [self performSegueWithIdentifier:@"MoveToContact" sender:self];
 
 }
-- (IBAction)longPress:(id)sender {
-    
-   
-    
-    
+- (IBAction)longPress:(id)sender
+{
     NSURL *url = [[NSBundle mainBundle] URLForResource:[[arrObjHole objectAtIndex:0] objectAtIndex:2] withExtension:@"gif"];
     _imgObjSlected.image = [UIImage animatedImageWithAnimatedGIFData:[NSData dataWithContentsOfURL:url]];
     
